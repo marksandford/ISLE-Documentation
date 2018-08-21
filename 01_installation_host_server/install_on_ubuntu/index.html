@@ -38,7 +38,7 @@
     
     
       
-        <title>Install ISLE Host Server Dependencies on Ubuntu 16.04 - Islandora Enterprise (ISLE)</title>
+        <title>Install on ubuntu - Islandora Enterprise (ISLE)</title>
       
     
     
@@ -99,7 +99,7 @@
                 Islandora Enterprise (ISLE)
               </span>
               <span class="md-header-nav__topic">
-                Install ISLE Host Server Dependencies on Ubuntu 16.04
+                Install on ubuntu
               </span>
             
           
@@ -180,12 +180,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       Installation and Migration Instructions
@@ -213,12 +211,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
     
     <label class="md-nav__link" for="nav-2-2">
       2. Host Server Prerequisites
@@ -236,8 +232,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../host_server_system_specifications/" title="Host Server Specifications" class="md-nav__link">
-      Host Server Specifications
+    <a href="../install_on_centos/" title="CentOS" class="md-nav__link">
+      CentOS
     </a>
   </li>
 
@@ -248,181 +244,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../install_on_centos/" title="Install ISLE Host Server Dependencies on CentOS" class="md-nav__link">
-      Install ISLE Host Server Dependencies on CentOS
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Install ISLE Host Server Dependencies on Ubuntu 16.04
-      </label>
-    
-    <a href="./" title="Install ISLE Host Server Dependencies on Ubuntu 16.04" class="md-nav__link md-nav__link--active">
-      Install ISLE Host Server Dependencies on Ubuntu 16.04
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-process-overview" title="Install process overview" class="md-nav__link">
-    Install process overview
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-install-server-prerequisites" title="Step 1: Install server prerequisites" class="md-nav__link">
-    Step 1: Install server prerequisites
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-install-docker" title="Step 2: Install Docker" class="md-nav__link">
-    Step 2: Install Docker
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-create-islandora-user-and-group" title="Step 3: Create islandora user and group" class="md-nav__link">
-    Step 3: Create islandora user and group
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4a-setup-ssh-access-for-islandora-user-on-vm-server-part-1" title="Step 4a: Setup SSH access for islandora user on VM / server (Part 1)" class="md-nav__link">
-    Step 4a: Setup SSH access for islandora user on VM / server (Part 1)
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#optional-create-ssh-keys-on-endusers-laptop-workstation" title="(optional) Create ssh keys on enduser's laptop / workstation" class="md-nav__link">
-    (optional) Create ssh keys on enduser's laptop / workstation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4b-setup-ssh-access-for-islandora-user-on-vm-server-part-2" title="Step 4b: Setup SSH access for islandora user on VM / server (Part 2)" class="md-nav__link">
-    Step 4b: Setup SSH access for islandora user on VM / server (Part 2)
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#optional-note-for-vagrant-and-local-vm-users-only" title="(optional) Note for Vagrant and local VM users only" class="md-nav__link">
-    (optional) Note for Vagrant and local VM users only
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5-create-docker-group" title="Step 5: Create Docker group" class="md-nav__link">
-    Step 5: Create Docker group
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-6-add-islandora-user-to-wheel-group" title="Step 6: Add islandora user to wheel group" class="md-nav__link">
-    Step 6: Add islandora user to wheel group
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-7-install-docker-compose" title="Step 7: Install Docker-Compose" class="md-nav__link">
-    Step 7: Install Docker-Compose
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#optional-alternative-install-method-for-docker-compose" title="(optional) Alternative install method for Docker-compose" class="md-nav__link">
-    (optional) Alternative install method for Docker-compose
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-8-clone-isle-repository" title="Step 8: Clone ISLE repository" class="md-nav__link">
-    Step 8: Clone ISLE repository
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" title="Next steps" class="md-nav__link">
-    Next steps
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../install_on_ubuntu_1804/" title="Install ISLE Host Server Dependencies on Ubuntu 18.04 (ISLE RC 1.1)" class="md-nav__link">
-      Install ISLE Host Server Dependencies on Ubuntu 18.04 (ISLE RC 1.1)
+    <a href="../install_on_ubuntu_1804/" title="Ubuntu 18.04" class="md-nav__link">
+      Ubuntu 18.04
     </a>
   </li>
 
@@ -954,6 +777,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../host_server_system_specifications/" title="Host Server Specifications" class="md-nav__link">
+      Host Server Specifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../07_appendices/editing-the-hosts-file/" title="Editing the /ect/hosts file" class="md-nav__link">
       Editing the /ect/hosts file
     </a>
@@ -1254,7 +1089,7 @@
               
                 
                 
-                  <h1>Install ISLE Host Server Dependencies on Ubuntu 16.04</h1>
+                  <h1>Install on ubuntu</h1>
                 
                 <p><strong>Ubuntu</strong> server version to use: <code>16.04 LTS</code></p>
 <p>This is a detailed operating system-specific guide including commands to copy/paste for all the software you may need to run ISLE on a <code>Ubuntu</code> ISLE Host Server.</p>
@@ -1655,41 +1490,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../install_on_centos/" title="Install ISLE Host Server Dependencies on CentOS" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Install ISLE Host Server Dependencies on CentOS
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../install_on_ubuntu_1804/" title="Install ISLE Host Server Dependencies on Ubuntu 18.04 (ISLE RC 1.1)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Install ISLE Host Server Dependencies on Ubuntu 18.04 (ISLE RC 1.1)
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
